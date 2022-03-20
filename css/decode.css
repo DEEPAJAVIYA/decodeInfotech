@@ -1,0 +1,335 @@
+* {
+  margin: 0rem;
+  padding: 0rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: auto;
+  font-family: Georgia, serif;
+}
+
+.navbar {
+  width: 100vw;
+  height: auto;
+  padding: 0.5vw 0vw;
+  background-color: #cfced4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar .logo {
+  font-size: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar .logo .logoimg img {
+  width: 6rem;
+  height: 5rem;
+  border-radius: 50%;
+}
+
+.navbar .logo .logoname {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.navbar .features ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar .features ul li {
+  font-size: 2rem;
+  list-style: none;
+  padding: 0 2rem;
+}
+
+.navbar .features ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 2.2rem;
+}
+
+.navbar .features ul li :hover {
+  color: #424141;
+  border-bottom: 1px solid #000;
+}
+
+.home {
+  height: auto;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 28rem 5vw;
+  color: white;
+}
+
+.home h1 {
+  margin-bottom: 4rem;
+  font-size: 5.5rem;
+  font-weight: 600;
+  z-index: 100;
+}
+
+.home p {
+  font-size: 2.5rem;
+  margin-bottom: 3.3rem;
+  z-index: 100;
+}
+
+.heading {
+  color: black;
+  padding: 4rem 5vw 3rem 5vw;
+}
+
+.heading h2 {
+  font-size: 5rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.ourwork {
+  height: auto;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 4vw 5vw;
+}
+
+.ourwork .card {
+  width: 30rem;
+  height: 33rem;
+  border-radius: 2rem;
+  background-color: black;
+  margin: 2rem;
+}
+
+.ourwork .card img {
+  width: 30rem;
+  height: 33rem;
+  position: absolute;
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+}
+
+.ourwork .card .hover_text {
+  display: none;
+  width: 30rem;
+  height: 33rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  top: 0rem;
+  left: 0rem;
+  z-index: 10;
+  color: white;
+}
+
+.ourwork .card .hover_text h4 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.ourwork .card .hover_text p {
+  text-align: center;
+  padding-top: 2rem;
+  font-size: 2rem;
+}
+
+.ourwork .card:hover img {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-filter: opacity(0.4);
+          filter: opacity(0.4);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.ourwork .card:hover .hover_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.about {
+  height: auto;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 5vw;
+}
+
+.about .aboutinfo {
+  width: 65%;
+  height: auto;
+  color: white;
+}
+
+.about .aboutinfo h2 {
+  font-size: 3.8rem;
+}
+
+.about .aboutinfo p {
+  font-size: 2.8rem;
+}
+
+.about .aboutinfo h6 {
+  font-size: 1.9rem;
+}
+
+.about .aboutpic {
+  width: 45%;
+  height: auto;
+  margin-left: 20rem;
+}
+
+.about .aboutpic img {
+  width: 50rem;
+  height: 45rem;
+}
+
+.contact {
+  padding: 2vw 5vw;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: black;
+}
+
+.contact p {
+  margin: 2rem 0;
+  cursor: pointer;
+}
+
+.contact p a {
+  text-decoration: none;
+  color: white;
+  font-size: 2.5rem;
+}
+
+.contact p :hover {
+  color: #d1d1d1;
+}
+
+.contact iframe {
+  margin: 2rem 0;
+  width: 80%;
+  height: 50%;
+}
+
+.footer {
+  padding: 2rem 5vw;
+  text-align: center;
+  font-size: 1.7rem;
+  color: black;
+  background-color: #cfced4;
+}
+
+.animate-charcter {
+  text-transform: uppercase;
+  background-image: linear-gradient(-225deg, #525252 0%, #8f8f8f 29%, #d8d8d8 67%, #ffffff 100%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: textclip 2s linear infinite;
+          animation: textclip 2s linear infinite;
+  display: inline-block;
+  font-size: 190px;
+}
+
+@-webkit-keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+/*# sourceMappingURL=decode.css.map */
